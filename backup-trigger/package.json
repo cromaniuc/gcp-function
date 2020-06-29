@@ -1,0 +1,40 @@
+{
+  "name": "backup",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "dependencies": {
+    "@google-cloud/debug-agent": "^4.0.0",
+    "googleapis": "^39.2.0",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^1.1.1",
+    "@google-cloud/nodejs-repo-tools": "^3.3.0",
+    "child-process-promise": "^2.2.1",
+    "express": "^4.16.3",
+    "mocha": "^7.0.0",
+    "moment": "^2.24.0",
+    "promise-retry": "^1.1.1",
+    "proxyquire": "^2.1.0",
+    "request": "^2.88.0",
+    "requestretry": "^4.0.0",
+    "sinon": "^9.0.0",
+    "uuid": "^7.0.0",
+    "yargs": "^15.0.0"
+  },
+  "cloud-repo-tools": {
+    "requiresKeyFile": true,
+    "requiresProjectId": true,
+    "requiredEnvVars": [
+      "BASE_URL",
+      "GCLOUD_PROJECT",
+      "GCF_REGION",
+      "FUNCTIONS_TOPIC",
+      "FUNCTIONS_BUCKET",
+      "FUNCTIONS_CMD"
+    ]
+  }
+}
